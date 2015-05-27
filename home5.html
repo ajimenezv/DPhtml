@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<table id="myTable">
+			<tr>
+				<th >Square</th> <th>Cube</th>
+			</tr>
+		</table>	
+
+		<script>
+			var nums=prompt("Write the numbers: ","");
+			var num=nums.split(" ");
+			for(var i=0;i<num.length;i++){
+				var table = document.getElementById("myTable");
+			    var row = table.insertRow(1);
+			    var cell1 = row.insertCell(0);
+			    var cell2 = row.insertCell(1);
+			    cell1.innerHTML = Math.pow(parseInt(num[i]),2);
+			    cell2.innerHTML = Math.pow(parseInt(num[i]),3);
+			}
+		</script>
+
+	</body>
+</html>

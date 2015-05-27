@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<div id="div1">
+			<p id="p1"></p>
+		</div>
+		<script>
+			var num1=prompt("Write number: ","");
+			var num2=prompt("Write number: ","");
+			var sum=parseInt(num1)+parseInt(num2);
+			var dif=num1-num2;
+			
+			var paraS = document.createElement("p");
+			var paraD = document.createElement("p");
+			var nodeS= document.createTextNode("The sum is "+sum);
+			var nodeD= document.createTextNode("The difference is "+dif);
+
+			paraS.appendChild(nodeS);
+			paraD.appendChild(nodeD);
+			var element = document.getElementById("div1");
+			element.appendChild(paraS);
+			element.appendChild(paraD);
+			
+		</script>
+	</body>	
+</html>

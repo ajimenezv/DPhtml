@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<div id="div1">
+			<p id="p1"></p>
+		</div>
+
+		<script>
+			var num=prompt("Write number: ","");
+			var para = document.createElement("p");
+			var node;
+			if(num%2==0){
+				node= document.createTextNode("This is pair "+num);
+			}else{
+				node= document.createTextNode("This is odd "+num);
+			}
+			
+			para.appendChild(node);
+			var element = document.getElementById("div1");
+			element.appendChild(para);
+		</script>
+
+	</body>
+</html>

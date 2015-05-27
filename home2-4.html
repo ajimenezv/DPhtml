@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<form>
+			Enter the number:<br>
+			<input type="text" id="num1" onchange="myf()">
+			<br>
+			Enter the number:<br>
+			<input type="text" id="num2" onchange="myf()">
+			<br>
+			<div id="dynIn">	
+				<input type="text" id="textT" readonly>
+			</div>
+		</form>
+		
+		<script>
+			function myf(){
+				var sum=parseInt(document.getElementById("num1").value)+parseInt(document.getElementById("num2").value);
+				document.getElementById("textT").value=sum;
+			
+			}
+		</script>
+
+	</body>
+</html>

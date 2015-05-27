@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<body onload="changeBackground('red');">
+		<h1>Select the color</h1>
+		<form>
+			<input type="radio" name="color" value="red" onclick="myfR()" checked>Red
+			<br>
+			<input type="radio" name="color" value="blue" onclick="myfB()">Blue
+			<br>
+			<input type="radio" name="color" value="green" onclick="myfG()">Green
+			<br>
+			<input type="radio" name="color" value="Yellow" onclick="myfY()">Yellow
+		</form>
+		
+		<script>
+			function myfR(){
+			document.body.style.background = "#FF0000";	
+			}
+			function myfB(){
+			document.body.style.background = "#0000FF";	
+			}
+			function myfG(){
+			document.body.style.background = "#00FF00";	
+			}
+			function myfY(){
+			document.body.style.background = "#FFFF00";	
+			}
+		</script>
+
+	</body>
+</html>

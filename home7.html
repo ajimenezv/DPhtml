@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<div id="div1">
+		</div>
+
+		<script>
+			var num,m=0,mt;
+			var list=new Array();
+			var para,node,element;
+			do{
+				
+				num=prompt("Write the number: ","");
+				list.push(parseInt(num));
+				m+=parseInt(num);
+				
+				if(num!="end"){
+					mt=m/list.length;
+					para = document.createElement("p");
+					node= document.createTextNode("List: "+list+"\nThe mean is "+mt);
+					para.appendChild(node);
+					element = document.getElementById("div1");
+					
+					element.appendChild(para);
+					
+				}
+
+			}while(num!="end");	
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		
+		<div id="div1">
+			
+		</div>
+		<script>
+
+			var str=prompt("Write string: ","");
+			if(str!=null){
+				var para = document.createElement("p");
+				var node= document.createTextNode("String is "+str);
+				para.appendChild(node);
+				var element = document.getElementById("div1");
+				element.appendChild(para);
+			}
+			
+		</script>
+
+	</body>
+</html>

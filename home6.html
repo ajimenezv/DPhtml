@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<table id="myTable">
+			<tr>
+			</tr>
+		</table>	
+
+		<script>
+			var nums=prompt("Write the numbers: ","");
+			var num=nums.split(" ");
+			for(var i=0;i<num.length;i++){
+				var table = document.getElementById("myTable");
+			    var row = table.insertRow(i);
+			    for(var j=0;j<num.length;j++){
+				    var cell = row.insertCell(j);
+				    cell.innerHTML = num[i]*num[j];
+				}
+			}
+		</script>
+
+	</body>
+</html>

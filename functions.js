@@ -6,7 +6,7 @@ function myFun(){
 	var n4=document.getElementById("num4").value;
 	var n5=document.getElementById("num5").value;
 	
-	if(document.getElementById("num1").value=='DAMNS')
+	if(document.getElementById("num1").value=='FECKKK')
 	{
 		n1=0;
 	}

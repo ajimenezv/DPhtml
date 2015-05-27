@@ -7,7 +7,7 @@ function myFun(){
 	var n5=document.getElementById("num5").value;
 	
 <<<<<<< HEAD
-	if(document.getElementById("num1").value=='DAMNS')
+	if(document.getElementById("num1").value=='')
 =======
 	if(document.getElementById("num1").value=='')
 >>>>>>> Child
